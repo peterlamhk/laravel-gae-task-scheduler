@@ -1,0 +1,34 @@
+{
+    "name": "retepmal/laravel-gae-task-scheduler",
+    "description": "Provide a route triggering schedule:run command from GAE cron.yaml.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Lam",
+            "email": "peter@peterlam.dev"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^9.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Retepmal\\LaravelGaeTaskScheduler\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Retepmal\\LaravelGaeTaskScheduler\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Retepmal\\LaravelGaeTaskScheduler\\GaeTaskSchedulerServiceProvider"
+            ]
+        }
+    }
+}
